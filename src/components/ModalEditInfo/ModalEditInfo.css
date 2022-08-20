@@ -1,0 +1,236 @@
+.ModalEditInfo__wrapper {
+    position: absolute;
+    left: -356px;
+    top: -84px;
+    right: -32px;
+    bottom: -32px;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ModalEditInfo__container {
+    width: 758px;
+    height: 628px;
+    background: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 32px 32px 32px;
+}
+
+.ModalEditInfo__container h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.ModalEditInfo__content {
+    margin-top: 26px;
+    width: 100%;
+}
+
+.ModalEditInfo__box {
+    display: flex;
+}
+
+.ModalEditInfo__event p {
+    width: 328px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.ModalEditInfo__event div span {
+    padding: 10px 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.ModalEditInfo__event .ModalEditInfo__code {
+    width: 245px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #a5a8b1;
+    border-radius: 8px;
+}
+.ModalEditInfo__event .ModalEditInfo__name-event {
+    width: 367px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #a5a8b1;
+    border-radius: 8px;
+}
+
+.ModalEditInfo__name-event span,
+.ModalEditInfo__code span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.ModalEditInfo__space {
+    margin-top: 25px;
+}
+
+.ModalEditInfo__calendar {
+    display: flex;
+}
+
+.ModalEditInfo__calendar div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #a5a8b1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.ModalEditInfo__calendar div span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.7;
+    padding-left: 12px;
+}
+
+.ModalEditInfo__calendar div:first-child {
+    width: 143px;
+    height: 40px;
+}
+
+.ModalEditInfo__calendar div:nth-child(2) {
+    width: 129px;
+    height: 40px;
+    margin-left: 8px;
+}
+
+.ModalEditInfo__price {
+    margin-top: 24px;
+}
+
+.ModalEditInfo__price p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+
+.ModalEditInfo__input {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.ModalEditInfo__input div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ModalEditInfo__input input {
+    margin-right: 8px;
+}
+
+.ModalEditInfo__input-checkbox {
+    margin-left: 0;
+}
+
+.input-space,
+.input-space-small {
+    margin-left: 8px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    width: 148px;
+    height: 40px;
+    background: #f1f4f8;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #a5a8b1;
+}
+
+.input-space-small {
+    width: 72px;
+}
+
+.ModalEditInfo__select {
+    margin-top: 32px;
+}
+
+.ModalEditInfo__select p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+
+.ModalEditInfo__select select {
+    padding: 10px 12px;
+    border: 1px solid #a5a8b1;
+    width: 156px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.7;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+}
+.ModalEditInfo__note {
+    color: #fd5959;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: block;
+    margin-top: 12px;
+}
+
+.ModalEditInfo__note span {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1e0d03;
+    opacity: 0.4;
+}
+
+.ModalEditInfo__btn {
+    margin-top: 20px;
+}
+
+.ModalEditInfo__btn button {
+    padding: 11px 24px;
+    width: 160px;
+    height: 48px;
+    border: 1px solid #ff993c;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.ModalEditInfo__btn-delete {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.ModalEditInfo__btn-save {
+    background-color: var(--primary-color);
+    color: white;
+    margin-left: 24px;
+}

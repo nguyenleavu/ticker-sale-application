@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #ff993c;
+    --primary-text-color: #1e0d03;
+
+    --search-color: rgba(237, 237, 237, 1);
+    --text-white: #ffffff;
+    --background-color: #e5e5e5;
+    --sidebar-yellow: #ffb800;
+    --circle-orange: #ff8a48;
+    --btn-blue: #27aef9;
+    --border-status-grey: #919dba;
+    --border-status-red: #fd5959;
+    --text-was-used-color: #919dba;
+    --text-not-used-color: #03ac00;
+    --text-expired-color: #fd5959;
+    --show-calendar: rgba(109, 46, 0, 0.35);
+    --chart-color: #888888;
+    --calendar-today-color: #ffba7b;
+    --calendar-weekdays-color: #c55e00;
+    --calendar-text-color: #23221f;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: var(--primary-text-color);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+input[type='radio'] {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+table,
+th,
+td,
+tr {
+    border: none;
+}
+
+input[type='checkbox'] {
+    width: 24px;
+    height: 24px;
 }

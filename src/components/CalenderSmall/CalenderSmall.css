@@ -1,0 +1,23 @@
+.CalendarSmall__wrapper {
+    background: #f7f8fb;
+    border-radius: 8px;
+}
+
+.CalendarSmall__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 192px;
+    height: 40px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #a5a8b1;
+}
+
+.border {
+    border: 1px solid #a5a8b1;
+    background-color: transparent;
+}

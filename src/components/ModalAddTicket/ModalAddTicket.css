@@ -1,0 +1,259 @@
+.ModalAddTicket__wrapper {
+    position: absolute;
+    left: -356px;
+    top: -84px;
+    right: -32px;
+    bottom: -32px;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ModalAddTicket__container {
+    width: 758px;
+    height: 628px;
+    background: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 32px 32px 32px;
+}
+
+.ModalAddTicket__container h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.ModalAddTicket__content {
+    margin-top: 26px;
+    width: 100%;
+}
+
+.ModalAddTicket__box {
+    display: flex;
+}
+
+.ModalAddTicket__event p {
+    width: 328px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.ModalAddTicket__event div span {
+    padding: 10px 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.ModalAddTicket__event input {
+    padding: 10px 16px;
+    outline: none;
+    border: 1px solid #a5a8b1;
+    border-radius: 8px;
+    width: 367px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #a5a8b1;
+    opacity: 0.7;
+}
+
+.ModalAddTicket__event input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #a5a8b1;
+    opacity: 0.7;
+}
+
+.ModalAddTicket__event .ModalAddTicket__code {
+    width: 245px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #a5a8b1;
+    border-radius: 8px;
+}
+.ModalAddTicket__event .ModalAddTicket__name-event {
+    width: 367px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #a5a8b1;
+    border-radius: 8px;
+}
+
+.ModalAddTicket__name-event span,
+.ModalAddTicket__code span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.ModalAddTicket__space {
+    margin-top: 25px;
+}
+
+.ModalAddTicket__calendar {
+    display: flex;
+}
+
+.ModalAddTicket__calendar div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #a5a8b1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.ModalAddTicket__calendar div span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.7;
+    padding-left: 12px;
+}
+
+
+.ModalAddTicket__calendar div:first-child {
+    width: 143px;
+    height: 40px;
+}
+
+.ModalAddTicket__calendar div:nth-child(2) {  
+    width: 140px;
+    height: 40px;
+    margin-left: 8px;
+}
+
+.ModalAddTicket__price {
+    margin-top: 24px;
+}
+
+.ModalAddTicket__price p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+
+.ModalAddTicket__input {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.ModalAddTicket__input div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ModalAddTicket__input input {
+    margin-right: 8px;
+}
+
+.ModalAddTicket__input-checkbox {
+    margin-left: 0;
+}
+
+.input-space,
+.input-space-small {
+    margin-left: 8px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    width: 148px;
+    height: 40px;
+    background: #f1f4f8;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #a5a8b1;
+}
+
+.input-space-small {
+    width: 72px;
+}
+
+.ModalAddTicket__select {
+    margin-top: 32px;
+}
+
+.ModalAddTicket__select p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+
+.ModalAddTicket__select select {
+    padding: 10px 12px;
+    border: 1px solid #a5a8b1;
+    width: 156px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.7;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+}
+.ModalAddTicket__note {
+    color: #fd5959;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: block;
+    margin-top: 12px;
+}
+
+.ModalAddTicket__note span {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1e0d03;
+    opacity: 0.4;
+}
+
+.ModalAddTicket__btn {
+    margin-top: 20px;
+}
+
+.ModalAddTicket__btn button {
+    padding: 11px 24px;
+    width: 160px;
+    height: 48px;
+    border: 1px solid #ff993c;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.ModalAddTicket__btn-delete {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.ModalAddTicket__btn-save {
+    background-color: var(--primary-color);
+    color: white;
+    margin-left: 24px;
+}

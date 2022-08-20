@@ -1,0 +1,113 @@
+.Home__wrapper {
+    padding: 24px;
+    height: 100%;
+    width: 100%;
+}
+
+.Home__title-chart h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.Home__chart-1 h5 {
+    margin-top: 32px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 27px;
+}
+
+.Home__total-chart {
+    margin-top: 40px;
+}
+
+.Home__total-chart span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.5;
+}
+
+.Home__total-chart div {
+    display: flex;
+    align-items: flex-end;
+}
+
+.Home__total-chart div h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.Home__total-chart div span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 4px;
+}
+
+.Home__chart-2 {
+}
+
+.Home__chart-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 90px;
+}
+
+.Home__chart-pie {
+    display: flex;
+}
+
+.Home__chart-tooltip-wrapper {
+    width: 360px;
+}
+
+.Home__chart-calender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px, 12px, 8px, 12px;
+    background: #ffffff;
+    border: 1px solid #e6e0e0;
+    border-radius: 4px;
+    height: 40px;
+    width: 155px;
+}
+
+.Home__chart-date {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 10px;
+    margin-left: 12px;
+    width: 97px;
+}
+
+.Home__chart-icon{
+    margin-right: 10px;
+}
+
+.Home__chart-color-blue {
+    background-color: #4f75ff;
+}
+
+.Home__chart-color-orange {
+    background-color: #ff8a48;
+}
+
+.Home__chart-color-orange,
+.Home__chart-color-blue {
+    height: 20px;
+    width: 44px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.Home__chart-tooltip {
+    display: flex;
+    margin-top: 18px;
+}

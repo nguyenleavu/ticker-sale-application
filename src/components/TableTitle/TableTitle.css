@@ -1,0 +1,81 @@
+.TableTitle__wrapper {
+    background: #f1f4f8;
+    border-radius: 8px 8px 0px 0px;
+    height: 48px;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.TableTitle__stt {
+    width: 120px;
+}
+
+.TableTitle__number-ticket {
+    width: 240px;
+}
+
+.TableTitle__number-ticket span {
+    margin-right: 126px;
+}
+
+.TableTitle__state {
+    width: 360px;
+}
+
+.TableTitle__th {
+    width: 100px;
+}
+
+.TableTitle__number-ticket-hight span{
+    margin-left: 40px;
+}
+
+.TableTitle__th-hight {
+    margin-left: 210px;
+}
+
+.TableTitle__th-hight-name {
+    margin-left: 126px;
+}
+
+.TableTitle__ths{
+    width: 200px;
+}
+
+.TableTitle__compo{
+    width: 250px;
+}
+
+.TableTitle__number{
+    width: 120px;
+}
+
+.TableTitle__number span{
+    margin-right: 30px;
+}
+
+.TableTitle__usedDate{
+    width: 140px;
+}
+
+.TableTitle__usedDate span{
+   margin-right: 20px;
+}
+
+.TableTitle__outDate{
+    width: 230px;
+}
+
+.TableTitle__outDate span{
+    margin-left: 40px;
+}
+
+.TableTitle__check-in {
+    width: 140px;
+    margin-left: 110px;
+}

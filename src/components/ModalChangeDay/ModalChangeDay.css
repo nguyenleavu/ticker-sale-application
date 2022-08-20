@@ -1,0 +1,97 @@
+.ModalChangeDay__wrapper {
+    position: absolute;
+    left: -356px;
+    top: -84px;
+    right: -32px;
+    bottom: -32px;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ModalChangeDay__container {
+    width: 758px;
+    height: 365px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 24px 32px 32px 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ModalChangeDay__container h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    width: 259px;
+    height: 30px;
+}
+
+.ModalChangeDay__content {
+    width: 100%;
+    height: 231px;
+    margin-top: 6px;
+}
+
+.ModalChangeDay__content section {
+    display: flex;
+    margin-top: 17px;
+}
+
+.ModalChangeDay__content section p {
+    width: 184px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+
+.ModalChangeDay__content section h4 {
+    width: 184px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.8;
+}
+
+.ModalChangeDay__content section span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+}
+
+.ModalChangeDay__content section div {
+    width: 146px;
+    height: 40px;
+}
+
+.ModalChangeDay__btn button {
+    width: 160px;
+    height: 48px;
+    padding: 11px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.ModalChangeDay__btn-delete {
+    color: var(--primary-color);
+    background: transparent;
+    box-sizing: border-box;
+    border: 1px solid var(--primary-color);
+}
+
+.ModalChangeDay__btn-save {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+}

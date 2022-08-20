@@ -1,0 +1,27 @@
+.SideBar__wrapper {
+    width: 320px;
+    margin-left: 33px;
+    margin-top: 17px;
+    position: relative;
+}
+
+.SideBar__nav {
+    margin-top: 60px;
+    width: 252px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.015em;
+}
+
+.SideBar__text-logo {
+    position: absolute;
+    left: 33px;
+    bottom: 31px;
+    user-select: none;
+}
+
+.SideBar__icon {
+    padding: 0 5.33px 0 6.33px;
+    opacity: 0.5;
+}

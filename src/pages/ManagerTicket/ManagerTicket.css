@@ -1,0 +1,118 @@
+.ManagerTicket__wrapper {
+    padding: 24px;
+}
+
+.ManagerTicket__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    height: 64px;
+    margin-bottom: 32px;
+}
+
+.ManagerTicket__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ManagerTicket__buttons {
+    display: flex;
+}
+
+.ManagerTicket__buttons button {
+    border: 1px solid var(--primary-color);
+    height: 48px;
+    border-radius: 6px;
+    padding: 11px 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: transparent;
+    color: var(--primary-color);
+    margin-left: 8px;
+    display: flex;
+}
+
+.ManagerTicket__button-icon-filter {
+    margin-right: 12px;
+}
+
+.ManagerTicket__input-wrapper {
+    width: 446px;
+    height: 48px;
+    background-color: rgba(247, 247, 248, 1);
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.ManagerTicket__input {
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 19.5px;
+    flex: 1;
+}
+
+.ManagerTicket__input::placeholder {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1e0d03;
+    opacity: 0.3;
+}
+
+.ManagerTicket__icon-search {
+    margin-right: 20px;
+}
+
+.ManagerTicket__container {
+    margin-top: 32px;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 72px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    gap: 0px;
+    cursor: pointer;
+}
+
+.pagination .page-num {
+    padding: 3px 7px 4px 8px;
+    border: 1px solid transparent;
+}
+
+.pagination .page-num :hover {
+    color: var(--primary-color);
+}
+
+.page-num-color {
+    color: var(--primary-color);
+}
+
+.pagination .active {
+    color: var(--primary-color);
+    padding: 3px 7px 4px 8px;
+    gap: 0px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.pagination .orange {
+    color: var(--primary-color);
+}

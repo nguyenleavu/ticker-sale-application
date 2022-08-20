@@ -1,0 +1,131 @@
+.ModalFilter__wrapper {
+    position: absolute;
+    left: -356px;
+    top: -84px;
+    right: -32px;
+    bottom: -32px;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ModalFilter__container {
+    width: 634px;
+    height: 454px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.ModalFilter__container p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.ModalFilter__calendar {
+    display: flex;
+    margin-top: 26px;
+}
+
+.ModalFilter__calendar section {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.7;
+    margin-right: 122px;
+}
+
+.ModalFilter__options {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.ModalFilter__options p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.ModalFilter__options label {
+    margin-right: 34px;
+}
+
+.ModalFilter__check-in {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.ModalFilter__check-in p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.8;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.ModalFilter__check-in-btn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ModalFilter__check-in-btn label {
+    width: 180px;
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.ModalFilter__check-in-btn input {
+    margin-right: 8px;
+    height: 24px;
+    width: 24px;
+}
+
+.ModalFilter__check-in-btn input:checked {
+}
+
+.ModalFilter__check-in-btn span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.ModalFilter__filter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -10px;
+    bottom: 23px;
+}
+
+.ModalFilter__filter button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--primary-color);
+    padding: 11px 24px;
+    width: 160px;
+    height: 48px;
+    box-sizing: border-box;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}

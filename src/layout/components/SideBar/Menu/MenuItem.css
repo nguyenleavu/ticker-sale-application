@@ -1,0 +1,40 @@
+.MenuItem__active {
+    background-color: var(--sidebar-yellow);
+    color: var(--text-white);
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.MenuItem {
+    background-color: transparent;
+    color: var(--primary-text-color);
+    opacity: 0.6;
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.MenuItem__icon svg {
+    fill: var(--primary-text-color);
+}
+
+.MenuItem__active:focus svg {
+    fill: white;
+    transform: none;
+    font-weight: 700;
+}
+
+.MenuItem__item {
+    box-sizing: border-box;
+    height: 56px;
+    padding: 15px 0 15px 28px;
+}
+
+.MenuItem__title {
+    margin-left: 15px;
+}
