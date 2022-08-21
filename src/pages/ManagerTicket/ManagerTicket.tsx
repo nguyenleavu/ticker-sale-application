@@ -2359,6 +2359,7 @@ const ManagerTicket = (props: Props) => {
     const [currentItems, setCurrentItems] = useState<any>([]);
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
+    const [showModalFilter, setShowModalFilter] = useState(false);
 
     useEffect(() => {
         const endOffset = itemOffset + itemsPerPage;
@@ -2370,9 +2371,10 @@ const ManagerTicket = (props: Props) => {
         const newOffset = (event.selected * itemsPerPage) % data.length;
         setItemOffset(newOffset);
     };
+
     return (
         <div className='ManagerTicket__wrapper'>
-            {/* <ModalFilter /> */}
+            {showModalFilter && <ModalFilter />}
             {/* <ModalChangeDay /> */}
             <h1 className='ManagerTicket__title'>Danh sách vé</h1>
             <div className='ManagerTicket__navbar'>
@@ -2389,7 +2391,7 @@ const ManagerTicket = (props: Props) => {
                     </span>
                 </div>
                 <div className='ManagerTicket__buttons'>
-                    <button>
+                    <button onClick={() => setShowModalFilter(true)}>
                         <span className='ManagerTicket__button-icon-filter'>
                             <FilterIcon />
                         </span>

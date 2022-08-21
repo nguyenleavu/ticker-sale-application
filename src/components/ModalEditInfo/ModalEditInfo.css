@@ -129,6 +129,9 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+}
+
+.ModalEditInfo__input span {
     opacity: 0.7;
 }
 
@@ -136,6 +139,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+.ModalEditInfo__input div label .styled-checkbox + label:before {
+    border: 3px solid var(--btn-blue);
+    box-sizing: border-box;
 }
 
 .ModalEditInfo__input input {
@@ -179,16 +186,23 @@
 }
 
 .ModalEditInfo__select select {
-    padding: 10px 12px;
+    padding: 10px 12px 10px 12px;
     border: 1px solid #a5a8b1;
     width: 156px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    opacity: 0.7;
     height: 40px;
     border-radius: 8px;
     outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 2;
+    color: rgba(30, 13, 3, 0.7);
+    background-image: url('../../assets/images/arrow.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px);
 }
 .ModalEditInfo__note {
     color: #fd5959;

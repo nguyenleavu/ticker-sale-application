@@ -72,28 +72,70 @@ const ModalFilter = (props: Props) => {
                     <p>Cổng Check - in</p>
                     <div className='ModalFilter__check-in-btn'>
                         <label>
-                            <input type='checkbox' />
-                            <span>Tất cả</span>
+                            <input
+                                className='styled-checkbox'
+                                id='styled-checkbox-1'
+                                type='checkbox'
+                                value='value1'
+                            />
+                            <label htmlFor='styled-checkbox-1'>
+                                <span>Tất cả</span>
+                            </label>
                         </label>
                         <label>
-                            <input type='checkbox' />
-                            <span>Cổng 1</span>
+                            <input
+                                className='styled-checkbox'
+                                id='styled-checkbox-2'
+                                type='checkbox'
+                                value='value2'
+                            />
+                            <label htmlFor='styled-checkbox-2'>
+                                <span>Cổng 1</span>
+                            </label>
                         </label>
                         <label>
-                            <input type='checkbox' />
-                            <span>Cổng 2</span>
+                            <input
+                                className='styled-checkbox'
+                                id='styled-checkbox-3'
+                                type='checkbox'
+                                value='value3'
+                            />
+                            <label htmlFor='styled-checkbox-3'>
+                                <span>Cổng 2</span>
+                            </label>
                         </label>
                         <label>
-                            <input type='checkbox' />
-                            <span>Cổng 3</span>
+                            <input
+                                className='styled-checkbox'
+                                id='styled-checkbox-4'
+                                type='checkbox'
+                                value='value4'
+                            />
+                            <label htmlFor='styled-checkbox-4'>
+                                <span>Cổng 3</span>
+                            </label>
                         </label>
                         <label>
-                            <input type='checkbox' />
-                            <span>Cổng 4</span>
+                            <input
+                                className='styled-checkbox'
+                                id='styled-checkbox-5'
+                                type='checkbox'
+                                value='value5'
+                            />
+                            <label htmlFor='styled-checkbox-5'>
+                                <span>Cổng 4</span>
+                            </label>
                         </label>
                         <label>
-                            <input type='checkbox' />
-                            <span>Cổng 5</span>
+                            <input
+                                className='styled-checkbox'
+                                id='styled-checkbox-6'
+                                type='checkbox'
+                                value='value6'
+                            />
+                            <label htmlFor='styled-checkbox-6'>
+                                <span>Cổng 5</span>
+                            </label>
                         </label>
                     </div>
                 </div>

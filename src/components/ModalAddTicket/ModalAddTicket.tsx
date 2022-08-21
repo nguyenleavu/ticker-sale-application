@@ -1,3 +1,4 @@
+import ArrowIcon from '~/assets/icons/ArrowIcon';
 import CalendarIcon from '~/assets/icons/CalendarIcon';
 import IconClock from '~/assets/icons/IconClock';
 import './ModalAddTicket.css';
@@ -50,44 +51,52 @@ const ModalAddTicket = (props: Props) => {
                         <p>Giá vé áp dụng</p>
                         <div className='ModalAddTicket__input'>
                             <div>
-                                <input
-                                    type='checkbox'
-                                    className='ModalAddTicket__input-checkbox'
-                                />{' '}
-                                Vé lẻ (vnđ/vé) với giá{' '}
+                                <label>
+                                    <input
+                                        className='styled-checkbox'
+                                        id='styled-checkbox-edit1'
+                                        type='checkbox'
+                                        value='value1'
+                                    />
+                                    <label htmlFor='styled-checkbox-edit1'></label>
+                                </label>{' '}
+                                <span>Vé lẻ (vnđ/vé) với giá</span>{' '}
                                 <input
                                     placeholder='Giá vé'
                                     className='input-space'
                                 />{' '}
-                                / vé
+                                <span>/ vé</span>
                             </div>
                         </div>
                         <div className='ModalAddTicket__input'>
                             <div>
-                                <input
-                                    type='checkbox'
-                                    className='ModalAddTicket__input-checkbox'
-                                />
-                                Combo vé với giá{' '}
+                                <label>
+                                    <input
+                                        className='styled-checkbox'
+                                        id='styled-checkbox-edit2'
+                                        type='checkbox'
+                                        value='value1'
+                                    />
+                                    <label htmlFor='styled-checkbox-edit2'></label>
+                                </label>
+                                <span>Combo vé với giá</span>{' '}
                                 <input
                                     placeholder='Giá vé'
                                     className='input-space'
                                 />{' '}
-                                / {'  '}
+                                <span>/</span> {'  '}
                                 <input
                                     placeholder='Giá vé'
                                     className='input-space-small'
                                 />{' '}
-                                vé
+                                <span>vé</span>
                             </div>
                         </div>
                     </div>
                     <div className='ModalAddTicket__select'>
                         <p>Tình trạng</p>
                         <select>
-                            <option>
-                                <span>Đang áp dụng</span>
-                            </option>
+                            <option>Đang áp dụng</option>
                         </select>
                     </div>
                     <span className='ModalAddTicket__note'>

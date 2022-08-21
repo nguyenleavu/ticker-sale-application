@@ -124,13 +124,12 @@
     padding-left: 12px;
 }
 
-
 .ModalAddTicket__calendar div:first-child {
     width: 143px;
     height: 40px;
 }
 
-.ModalAddTicket__calendar div:nth-child(2) {  
+.ModalAddTicket__calendar div:nth-child(2) {
     width: 140px;
     height: 40px;
     margin-left: 8px;
@@ -152,7 +151,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    opacity: 0.7;
 }
 
 .ModalAddTicket__input div {
@@ -161,8 +159,17 @@
     justify-content: flex-start;
 }
 
+.ModalAddTicket__input span {
+    opacity: 0.7;
+}
+
 .ModalAddTicket__input input {
     margin-right: 8px;
+}
+
+.ModalAddTicket__input div label .styled-checkbox + label:before {
+    border: 3px solid var(--btn-blue);
+    box-sizing: border-box;
 }
 
 .ModalAddTicket__input-checkbox {
@@ -192,6 +199,9 @@
 
 .ModalAddTicket__select {
     margin-top: 32px;
+    position: relative;
+    z-index: 2;
+    
 }
 
 .ModalAddTicket__select p {
@@ -202,17 +212,26 @@
 }
 
 .ModalAddTicket__select select {
-    padding: 10px 12px;
+    padding: 10px 12px 10px 12px;
     border: 1px solid #a5a8b1;
     width: 156px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    opacity: 0.7;
     height: 40px;
     border-radius: 8px;
     outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 2;
+    color: rgba(30, 13, 3, 0.7);
+    background-image: url('../../assets/images/arrow.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px);
 }
+
+
 .ModalAddTicket__note {
     color: #fd5959;
     font-weight: 600;

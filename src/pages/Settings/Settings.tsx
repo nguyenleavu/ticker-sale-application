@@ -54,7 +54,7 @@ const Settings = (props: Props) => {
         <div className='ManagerTicket__wrapper'>
             {/* <ModalEditInfo /> */}
             {/* <ModalAddTicket /> */}
-            <Calendar />
+            {/* <Calendar /> */}
             <h1 className='ManagerTicket__title'>Danh sách vé</h1>
             <div className='ManagerTicket__navbar'>
                 <div className='ManagerTicket__input-wrapper'>

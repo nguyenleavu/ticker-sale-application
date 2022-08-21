@@ -4,6 +4,7 @@ const images = {
     imagesCopy: require('~/assets/images/Copyright.png') ,
     imagesLogo: require('~/assets/images/logo.png') ,
     imagesAvatar: require('~/assets/images/avatar.png') ,
+    imagesArrow:require('~/assets/images/arrow.png')
 };
 
 export default images;

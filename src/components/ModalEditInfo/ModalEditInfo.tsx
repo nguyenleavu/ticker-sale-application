@@ -60,35 +60,45 @@ const ModalEditInfo = (props: Props) => {
                         <p>Giá vé áp dụng</p>
                         <div className='ModalEditInfo__input'>
                             <div>
-                                <input
-                                    type='checkbox'
-                                    className='ModalEditInfo__input-checkbox'
-                                />{' '}
-                                Vé lẻ (vnđ/vé) với giá{' '}
+                                <label>
+                                    <input
+                                        className='styled-checkbox'
+                                        id='styled-checkbox-edit1'
+                                        type='checkbox'
+                                        value='value1'
+                                    />
+                                    <label htmlFor='styled-checkbox-edit1'></label>
+                                </label>{' '}
+                                <span>Vé lẻ (vnđ/vé) với giá</span>{' '}
                                 <input
                                     placeholder='Giá vé'
                                     className='input-space'
                                 />{' '}
-                                / vé
+                                <span>/ vé</span>
                             </div>
                         </div>
                         <div className='ModalEditInfo__input'>
                             <div>
-                                <input
-                                    type='checkbox'
-                                    className='ModalEditInfo__input-checkbox'
-                                />
-                                Combo vé với giá{' '}
+                                <label>
+                                    <input
+                                        className='styled-checkbox'
+                                        id='styled-checkbox-edit2'
+                                        type='checkbox'
+                                        value='value1'
+                                    />
+                                    <label htmlFor='styled-checkbox-edit2'></label>
+                                </label>
+                                <span>Combo vé với giá</span>{' '}
                                 <input
                                     placeholder='Giá vé'
                                     className='input-space'
                                 />{' '}
-                                / {'  '}
+                                <span>/</span> {'  '}
                                 <input
                                     placeholder='Giá vé'
                                     className='input-space-small'
                                 />{' '}
-                                vé
+                                <span>vé</span>
                             </div>
                         </div>
                     </div>
