@@ -329,9 +329,11 @@
 .TableItem__settings-none span{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .TableItem__settings-none span label{
     margin-left: 4px;
     color: var(--primary-color);
+    cursor: pointer;
 }

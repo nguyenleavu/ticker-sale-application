@@ -2374,7 +2374,9 @@ const ManagerTicket = (props: Props) => {
 
     return (
         <div className='ManagerTicket__wrapper'>
-            {showModalFilter && <ModalFilter />}
+            {showModalFilter && (
+                <ModalFilter setShowModalFilter={setShowModalFilter} />
+            )}
             {/* <ModalChangeDay /> */}
             <h1 className='ManagerTicket__title'>Danh sách vé</h1>
             <div className='ManagerTicket__navbar'>

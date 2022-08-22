@@ -20,6 +20,9 @@ type Props = {
     stateTicket?: string;
     none?: boolean;
     startDate?: string;
+    setShowModalEdit?:
+        | React.Dispatch<React.SetStateAction<boolean>>
+        | undefined;
 };
 
 const TableItem = (props: Props) => {
@@ -42,6 +45,7 @@ const TableItem = (props: Props) => {
         stateTicket,
         none,
         startDate,
+        setShowModalEdit,
     } = props;
     return (
         <>
@@ -160,10 +164,12 @@ const TableItem = (props: Props) => {
                 )}
                 {none && (
                     <td className='TableItem__settings-none'>
-                        <span>
-                            <EditIcon />
-                            <label>Cập nhật</label>
-                        </span>
+                        {setShowModalEdit && (
+                            <span onClick={() => setShowModalEdit(true)}>
+                                <EditIcon />
+                                <label>Cập nhật</label>
+                            </span>
+                        )}
                     </td>
                 )}
                 {usedDate && (

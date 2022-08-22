@@ -2,12 +2,20 @@ import CalendarIcon from '~/assets/icons/CalendarIcon';
 import IconClock from '~/assets/icons/IconClock';
 import './ModalEditInfo.css';
 
-type Props = {};
+type Props = {
+    setShowModalEdit: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
-const ModalEditInfo = (props: Props) => {
+const ModalEditInfo = ({ setShowModalEdit }: Props) => {
     return (
-        <div className='ModalEditInfo__wrapper'>
-            <div className='ModalEditInfo__container'>
+        <div
+            className='ModalEditInfo__wrapper'
+            onClick={() => setShowModalEdit(false)}
+        >
+            <div
+                className='ModalEditInfo__container'
+                onClick={(e) => e.stopPropagation()}
+            >
                 <h2>Cập nhật thông tin gói vé</h2>
                 <div className='ModalEditInfo__content'>
                     <div className='ModalEditInfo__box'>
@@ -105,9 +113,7 @@ const ModalEditInfo = (props: Props) => {
                     <div className='ModalEditInfo__select'>
                         <p>Tình trạng</p>
                         <select>
-                            <option>
-                                <span>Đang áp dụng</span>
-                            </option>
+                            <option>Đang áp dụng</option>
                         </select>
                     </div>
                     <span className='ModalEditInfo__note'>
@@ -115,7 +121,12 @@ const ModalEditInfo = (props: Props) => {
                     </span>
                 </div>
                 <div className='ModalEditInfo__btn'>
-                    <button className='ModalEditInfo__btn-delete'>Huỷ</button>
+                    <button
+                        onClick={() => setShowModalEdit(false)}
+                        className='ModalEditInfo__btn-delete'
+                    >
+                        Huỷ
+                    </button>
                     <button className='ModalEditInfo__btn-save'>Lưu</button>
                 </div>
             </div>

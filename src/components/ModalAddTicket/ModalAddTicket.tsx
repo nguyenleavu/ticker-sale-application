@@ -3,12 +3,20 @@ import CalendarIcon from '~/assets/icons/CalendarIcon';
 import IconClock from '~/assets/icons/IconClock';
 import './ModalAddTicket.css';
 
-type Props = {};
+type Props = {
+    setShowModalAddTicket: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
-const ModalAddTicket = (props: Props) => {
+const ModalAddTicket = ({ setShowModalAddTicket }: Props) => {
     return (
-        <div className='ModalAddTicket__wrapper'>
-            <div className='ModalAddTicket__container'>
+        <div
+            className='ModalAddTicket__wrapper'
+            onClick={() => setShowModalAddTicket(false)}
+        >
+            <div
+                className='ModalAddTicket__container'
+                onClick={(e) => e.stopPropagation()}
+            >
                 <h2>Thêm gói vé</h2>
                 <div className='ModalAddTicket__content'>
                     <div className='ModalAddTicket__box'>
@@ -104,7 +112,12 @@ const ModalAddTicket = (props: Props) => {
                     </span>
                 </div>
                 <div className='ModalAddTicket__btn'>
-                    <button className='ModalAddTicket__btn-delete'>Huỷ</button>
+                    <button
+                        onClick={() => setShowModalAddTicket(false)}
+                        className='ModalAddTicket__btn-delete'
+                    >
+                        Huỷ
+                    </button>
                     <button className='ModalAddTicket__btn-save'>Lưu</button>
                 </div>
             </div>

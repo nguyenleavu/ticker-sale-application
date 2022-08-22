@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import FilterIcon from '~/assets/icons/FilterIcon';
 import NextIcon from '~/assets/icons/NextIcon';
 import PrevIcon from '~/assets/icons/PrevIcon';
 import SearchIcon from '~/assets/icons/SearchIcon';
-import Calendar from '~/components/Calendar/Calendar';
 import ModalAddTicket from '~/components/ModalAddTicket/ModalAddTicket';
 import ModalEditInfo from '~/components/ModalEditInfo/ModalEditInfo';
 import TableItem from '~/components/TableItem/TableItem';
 import TableTitle from '~/components/TableTitle/TableTitle';
+import './Settings.css'
 
 type Props = {};
 
@@ -39,6 +39,8 @@ const Settings = (props: Props) => {
     const [currentItems, setCurrentItems] = useState<any>([]);
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
+    const [showModalEdit, setShowModalEdit] = useState(false);
+    const [showModalAddTicket, setShowModalAddTicket] = useState(false);
 
     useEffect(() => {
         const endOffset = itemOffset + itemsPerPage;
@@ -50,10 +52,10 @@ const Settings = (props: Props) => {
         const newOffset = (event.selected * itemsPerPage) % data.length;
         setItemOffset(newOffset);
     };
-    return (
+    return (       
         <div className='ManagerTicket__wrapper'>
-            {/* <ModalEditInfo /> */}
-            {/* <ModalAddTicket /> */}
+            {showModalEdit && <ModalEditInfo setShowModalEdit={setShowModalEdit}/>}
+            {showModalAddTicket && <ModalAddTicket setShowModalAddTicket={setShowModalAddTicket}/>}         
             {/* <Calendar /> */}
             <h1 className='ManagerTicket__title'>Danh sách vé</h1>
             <div className='ManagerTicket__navbar'>
@@ -74,10 +76,10 @@ const Settings = (props: Props) => {
                         <span className='ManagerTicket__button-icon-filter'>
                             <FilterIcon />
                         </span>
-                        <span>Lọc vé</span>
-                    </button>
-                    <button>
                         <span>Xuất file (.csv)</span>
+                    </button>
+                    <button className='Settings__buttons' onClick={()=>setShowModalAddTicket(true)}>
+                        <span>Thêm gói vé</span>
                     </button>
                 </div>
             </div>
@@ -105,6 +107,7 @@ const Settings = (props: Props) => {
                         combo={item.combo}
                         stateTicket={item.stateTicket}
                         none={true}
+                        setShowModalEdit={setShowModalEdit}
                     />
                 ))}
             </div>

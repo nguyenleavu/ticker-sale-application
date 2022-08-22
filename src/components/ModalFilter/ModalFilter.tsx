@@ -1,12 +1,21 @@
 import CalenderSmall from '../CalenderSmall/CalenderSmall';
 import './ModalFilter.css';
 
-type Props = {};
+type Props = {
+    setShowModalFilter: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
-const ModalFilter = (props: Props) => {
+const ModalFilter = ({ setShowModalFilter }: Props) => {
+    const handleClick: React.MouseEventHandler<HTMLInputElement> = (e) => {
+        setShowModalFilter(false);
+    };
+
     return (
-        <div className='ModalFilter__wrapper'>
-            <div className='ModalFilter__container'>
+        <div className='ModalFilter__wrapper' onClick={handleClick}>
+            <div
+                className='ModalFilter__container'
+                onClick={(e) => e.stopPropagation()}
+            >
                 <p>
                     <strong>Lọc vé</strong>
                 </p>
