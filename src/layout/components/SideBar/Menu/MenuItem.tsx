@@ -10,7 +10,9 @@ type Props = {
 const MenuItem = ({ title, to, icon }: Props) => {
     return (
         <NavLink
-            className={({ isActive }) => (isActive ? 'MenuItem__active' : 'MenuItem')}
+            className={({ isActive }) =>
+                isActive ? 'MenuItem__active' : 'MenuItem'
+            }
             to={to}
         >
             <li className='MenuItem__item'>

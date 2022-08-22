@@ -23,7 +23,7 @@
     fill: var(--primary-text-color);
 }
 
-.MenuItem__active:focus svg {
+.MenuItem__active .MenuItem__icon svg {
     fill: white;
     transform: none;
     font-weight: 700;
